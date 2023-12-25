@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <h1>Group 1-2</h1>
+  <h2>Please Sign In</h2>
+  <br>
+
+  <form method="POST" action="EventRegistration.php" onclick="getUserName()" class="select"> <!-- Once user is selected, value (id) gets sent log in page-->
+    <label>Choose a User to Sign in:</label>
+    <select name="userId" id="userId" class="dropdown">
+      <option value="1">Billy Joel</option>
+      <option value="2">Tom Hanks</option>
+      <option value="3">Sam Soyer</option>
+      <option value="4">Alex Abadi</option>
+      <option value="5">Lyla Abbatiello</option>
+      <option value="6">Brittany Erin</option>
+      <option value="7">Dalton Agan</option>
+      <option value="8">Kaylee Babcock</option>
+      <option value="9">Aaron Bellow</option>
+      <option value="10">Drew Carrol</option>
+      <option value="11">Amanda Carmine</option>
+      <option value="12">Kason Dehoux</option>
+      <option value="13">Lexi Dixon</option>
+      <option value="14">Xavier Duran</option>
+      <option value="15">Max Dye</option>
+      <option value="16">Chase Eaden</option>
+      <option value="17">Seth Faircloth</option>
+      <option value="18">Arthur Fauix</option>
+      <option value="19">Jared Forman</option>
+      <option value="20">Nelly Gale</option>
+      <option value="21">Todd Glenn</option>
+      <option value="22">Khadija Buck</option>
+      <option value="23">Samia Duran</option>
+      <option value="24">Rowan Fulton</option>
+      <option value="25">Lucia Baxter</option>
+      <option value="26">Polly Casey</option>
+      <option value="27">Roger Walters</option>
+      <option value="28">Robbie Hanson</option>
+      <option value="29">Melissa Stone</option>
+      <option value="30">Karl Finch</option>
+      <option value="31">James Spence</option>
+      <option value="32">Kendra Friedman</option>
+      <option value="33">Natasha Meyers</option>
+      <option value="34">Denzel Meyers</option>
+      <option value="35">Rufus Conway</option>
+      <option value="36">Annie Roth</option>
+      <option value="37">Belle Lambert</option>
+      <option value="38">Kyle Pennington</option>
+      <option value="39">Wade Cotton</option>
+      <option value="40">Timothy Hobbs</option>
+      <option value="41">Lillian Greene</option>
+      <option value="42">Andy Tucker</option>
+      <option value="43">Terry Michael</option>
+      <option value="44">Kain Eaton</option>
+      <option value="45">Brian Wise</option>
+      <option value="46">Tori Chase</option>
+      <option value="47">Derek Hopkins</option>
+      <option value="48">Tegan Pierce</option>
+      <option value="49">Omar Moyer</option>
+      <option value="50">Abu Reed</option>
+      <option value="51">Rebecca Steele</option>
+    </select>
+    <input type="hidden" name="userName" id="userName" />
+    <br><br>
+    <input class="button" type="submit" value="Sign In">
+    <!--input type="button" value="test" onclick="getUserName()" /-->
+  </form>
+
+  <script>
+    var getUserName = function() {
+      userName.value = userId.options[userId.selectedIndex].text;
+    };
+  </script>
+  <br>
+  <br>
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link href="eventReg.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form method="POST" action="register.php">
+    <input id="userId" type="hidden" value="<?= $_POST['userId']; ?>"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <h2>Events available for Registration</h2>
+    <p class="events"></p>
+    <script>
+
+        var userData = {};
+        userData.userId = document.getElementById('userId');
+
+        $.ajax({
+        method: "POST",
+        url: "eventTable.php"
+        })
+        .done(function( response ) {
+            $("p.events").html(response);
+        });
+    </script>
+</form>
+</body>
+</html>

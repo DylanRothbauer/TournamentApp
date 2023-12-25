@@ -1,0 +1,64 @@
+html {
+    /* Set the background to a linear gradient */
+    background: linear-gradient(to bottom right, #006663, #111111) no-repeat center center fixed;
+    /* Optionally, you can set a fallback background color */
+    background-color: #006663; /* Fallback color in case gradients are not supported */
+}
+
+body{
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    text-align: center;
+    color: white;
+}
+
+input{
+    cursor: pointer;
+}
+
+.select{
+    text-align: center;
+    position:relative;
+    color: black;
+}
+
+.dropdown{
+    text-align: center;
+    color: black;
+}
+
+/*Button style*/
+.button{
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    margin: auto;
+}
+
+
+.button:hover{
+    transform: scale(1.2);
+    box-shadow: 0 12px 16px 0 rgba(255,255,255, 0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+}
